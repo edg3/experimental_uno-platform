@@ -25,6 +25,7 @@ namespace ToDo.Droid
         public Application(IntPtr javaReference, JniHandleOwnership transfer)
             : base(() => new AppHead(), javaReference, transfer)
         {
+            Platforms.Current = Platform.Mobile;
             ConfigureUniversalImageLoader();
         }
 

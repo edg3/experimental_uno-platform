@@ -1,10 +1,14 @@
-namespace ToDo
+namespace ToDo;
+
+public sealed partial class MainPage : Page
 {
-    public sealed partial class MainPage : Page
+    public MainPage()
     {
-        public MainPage()
-        {
-            this.InitializeComponent();
-        }
+        this.InitializeComponent();
+
+        new Navigator(frmContent);
+        new ViewModelLocator();
+
+        Nav.I.GoTo(NavLoc.Main);
     }
 }

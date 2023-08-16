@@ -8,6 +8,8 @@ namespace ToDo.Skia.Gtk
     {
         public static void Main(string[] args)
         {
+            Platforms.Current = Platform.Skia;
+
             ExceptionManager.UnhandledException += delegate (UnhandledExceptionArgs expArgs)
             {
                 Console.WriteLine("GLIB UNHANDLED EXCEPTION" + expArgs.ExceptionObject.ToString());

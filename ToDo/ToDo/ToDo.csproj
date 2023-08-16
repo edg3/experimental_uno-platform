@@ -40,7 +40,7 @@
 				<Compile Update="**\*.xaml.cs">
 					<DependentUpon>%(Filename)</DependentUpon>
 				</Compile>
-				<PRIResource Include ="**\*.resw" />
+				<PRIResource Include="**\*.resw" />
 			</ItemGroup>
 		</Otherwise>
 	</Choose>
@@ -48,5 +48,15 @@
 	<ItemGroup>
 		<UnoImage Include="Assets\**\*.svg" />
 		<UpToDateCheckInput Include="**\*.xaml" Exclude="bin\**\*.xaml;obj\**\*.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Views\Mobile_MainView.xaml" />
+	  <None Remove="Views\Universal_MainView.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <UpToDateCheckInput Remove="Views\Mobile_MainView.xaml" />
+	  <UpToDateCheckInput Remove="Views\Universal_MainView.xaml" />
 	</ItemGroup>
 </Project>

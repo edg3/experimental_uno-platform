@@ -26,6 +26,8 @@ namespace ToDo
         /// <param name="args">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs args)
         {
+			if (Platforms.Current == Platform.NotSet) Platforms.Current = Platform.Windows;
+
             base.OnLaunched(args);
 
             MainWindow.SetWindowIcon();
