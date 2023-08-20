@@ -8,6 +8,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="MySql.Data" />
+		<PackageReference Include="sqlite-net-pcl" />
+		<PackageReference Include="SQLitePCLRaw.bundle_green" />
+		<PackageReference Include="SQLitePCLRaw.core" />
+		<PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl" />
+		<PackageReference Include="SQLitePCLRaw.provider.sqlite3" />
 		<PackageReference Include="Uno.WinUI" />
 		<PackageReference Include="Uno.Resizetizer" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Console" />

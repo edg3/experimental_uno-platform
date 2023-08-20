@@ -4,6 +4,8 @@ public sealed partial class MainPage : Page
 {
     public MainPage()
     {
+        new ToDoDataContext();
+
         this.InitializeComponent();
 
         new Navigator(frmContent);
